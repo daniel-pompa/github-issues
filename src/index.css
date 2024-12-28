@@ -53,3 +53,7 @@ pre {
 .active {
   @apply bg-blue-700 border-blue-500 border-0;
 }
+
+.selected-label {
+  @apply bg-slate-700;
+}
