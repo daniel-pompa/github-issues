@@ -1,6 +1,6 @@
 import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { GitApp } from '../GitApp';
-import { ListView, IssueView } from '../issues/views';
+import { ListView, IssueView, ListViewInfiniteScroll } from '../issues/views';
 import { NotFound } from '../shared';
 
 export const router = createBrowserRouter(
@@ -10,6 +10,7 @@ export const router = createBrowserRouter(
       element: <GitApp />,
       children: [
         { path: 'list', element: <ListView /> },
+        { path: 'list-infinite', element: <ListViewInfiniteScroll /> },
         { path: 'issue/:issueNumber', element: <IssueView /> },
       ],
     },
